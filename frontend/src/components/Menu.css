@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: wheat;
+  color: #000;
+}
+
+.menu-page {
+  padding: 0px;
+  max-width: 900px;
+  max-height: 100px;
+  margin: auto;
+  background: none;
+}
+
+.menu-heading {
+  font-size: 36px;
+  text-align: center;
+  margin: 40px 0 10px;
+  color: #2c3e50;
+}
+
+.menu-hours {
+  text-align: center;
+  color: #888;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.menu-vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-category {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d35400;
+  margin-bottom: 0px;
+  border: none;
+}
+
+.menu-section {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  justify-content: space-between;
+  background: none;
+  border: none;
+  box-shadow: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0;
+}

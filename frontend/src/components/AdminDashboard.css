@@ -1,0 +1,460 @@
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 220px;
+  right: 0;
+  background: #ff4500;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  font-size: 10px;
+  height: 100%;
+  width: 5%;
+  padding: 4px 8px;
+  background-color: #fff;
+  color: #ff4500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f2f2f2;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background: #e6e6e6;
+}
+
+.content {
+  margin-left: 220px;
+  margin-top: 60px;
+  padding: 20px;
+  overflow-y: auto;
+  width: calc(100% - 220px);
+}
+
+/* Center Add Item Form */
+.center-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+}
+
+.centered-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form input,
+.form select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Uniform size for view menu containers */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+}
+
+.menu-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.menu-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0;
+  line-height: 1.2em;
+  height: 2.4em; /* For 2-line max titles */
+  overflow: hidden;
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px;
+  line-height: 1.4em;
+  height: 2.8em; /* For 2-line max descriptions */
+  overflow: hidden;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* Enhanced feedback table */
+.feedback-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.feedback-table th,
+.feedback-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.feedback-table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+}
+
+/* Improved order details style */
+.order-details-section {
+  margin-top: 20px;
+}
+
+.order-details-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.order-details-section li {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.order-details-section li:hover {
+  transform: translateY(-3px);
+}
+
+.order-details-section button {
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border: none;
+  background: #ff4500;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-details-section .order-numbers {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.order-number-button {
+  padding: 6px 12px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-number-button:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+/* Order Analysis Section */
+.analysis-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.analysis-section h4 {
+  margin-bottom: 12px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.feedback-box table,
+.order-details-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.feedback-box th,
+.feedback-box td,
+.order-details-box th,
+.order-details-box td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.feedback-box th,
+.order-details-box th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.feedback-box,
+.order-details-box {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.feedback-box table, .order-details-box table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.feedback-box th, .feedback-box td,
+.order-details-box th, .order-details-box td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 220px;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.dish-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bestseller {
+  color: orangered;
+  font-weight: 600;
+}
+
+.centered-image {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .centered-image:hover {
+      transform: scale(1.05);
+    }
+     @media (max-width: 600px) {
+      .center-content {
+        padding: 5px;
+      }
+      .centered-image {
+        max-height: 60vh;
+        border-radius: 8px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .center-content {
+      display: flex;
+      justify-content: center; /* Horizontal center */
+      align-items: center;     /* Vertical center */
+      height: 100vh;           /* Full viewport height */
+      padding: 10px;
+    }
+
+    .menu-category-box {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff5ee;
+  border-radius: 10px;
+}
+
+.category-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: orangered;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f1c4a0;
+  padding-bottom: 5px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.menu-card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.menu-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.menu-price {
+  color: #444;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.bestseller {
+  color: #e67e22;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.menu-buttons button {
+  margin: 4px;
+  padding: 5px 10px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-buttons button:hover {
+  background-color: #e64a19;
+}
+.analysis-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.analysis-box th, .analysis-box td {
+  padding: 10px;
+  text-align: left;
+}

@@ -1,0 +1,13 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  background-color: wheat !important;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
